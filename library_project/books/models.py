@@ -17,7 +17,7 @@ class Book(models.Model):
             raise ValidationError({'title': 'Title cannot be empty.'})
         if not self.author.strip():
             raise ValidationError({'author': 'Author cannot be empty.'})
-        if self.published_date > date.today():
+        if self.published_date and self.published_date > date.today():
             raise ValidationError({'published_date': 'Date cannot be in the future.'})
 
     def save(self, *args, **kwargs):
