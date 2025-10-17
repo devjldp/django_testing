@@ -1,0 +1,28 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+
+# === Virtual environments ===
+venv/
+
+# === Django specific ===
+*.log
+*.pot
+*.pyc
+*.sqlite3
+db.sqlite3
+
+# === IDEs and editors ===
+.vscode/
+
+# === Environment files ===
+
+*.env
+
+# === Cache ===
+.cache/
+__pypackages__/
+.pytest_cache/
+
+
